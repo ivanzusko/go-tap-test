@@ -13,7 +13,7 @@ builds:
       - linux
       - windows
       - darwin
-brew:
+brews:
   github:
     owner: goreleaser
     name: homebrew-tap

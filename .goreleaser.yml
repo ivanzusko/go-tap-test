@@ -13,9 +13,12 @@ builds:
       - linux
       - windows
       - darwin
-brews:
-  -
-    goarm: 6
-    tap:
-      owner: ivanzusko
-      name: homebrew-tap
+brew:
+  github:
+    owner: goreleaser
+    name: homebrew-tap
+  folder: Formula
+  homepage:  https://goreleaser.com
+  description: Deliver Go binaries as fast and easily as possible
+  test: |
+    system "#{bin}/goreleaser -v"

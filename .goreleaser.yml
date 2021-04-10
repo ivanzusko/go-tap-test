@@ -13,3 +13,5 @@ builds:
       - linux
       - windows
       - darwin
+    goarch:
+      - amd64
